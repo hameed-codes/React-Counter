@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: #ff9900;
+  background: linear-gradient(142deg, rgba(255, 153, 0, 1) 0%, rgba(255, 0, 187, 1) 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scale-pop {
+    animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
