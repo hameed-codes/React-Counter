@@ -2,7 +2,7 @@
 
 > A clean and animated counter app built with React; my first hands-on project while learning React fundamentals like useState and CSS Modules.
 
-**Live Demo:** [Click here]()
+**Live Demo:** [Click here](https://react-counter-opal-delta.vercel.app/)
 
 ![screenshot](./src/assets/screenshot_1.png)
 
