@@ -81,3 +81,42 @@
     font-weight: bold;
     font-size: 1rem;
 }
+
+@media (max-width: 400px) {
+    .container {
+        min-width: auto;
+        width: 95vw;
+        border-radius: 24px;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 8px;
+        letter-spacing: 3px;
+        margin: 8px;
+    }
+
+    .countDisplay {
+        font-size: 4.5rem;
+        height: 120px;
+        margin: 8px;
+    }
+
+    .btns {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-size: 28px;
+        width: 45px;
+        height: 45px;
+        margin: 0 8px;
+    }
+
+    .resetBtn {
+        width: 80px;
+        font-size: 0.85rem;
+        border-radius: 20px;
+    }
+}
