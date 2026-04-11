@@ -14,11 +14,11 @@ function Counter() {
   }
 
   let increaseCount = () => {
-    setCount(count + 1);
+    setCount(c => c + 1);
   }
 
   let decreaseCount = () => {
-    setCount(count - 1);
+    setCount(c => c - 1);
   }
 
   let resetCount = () => {
