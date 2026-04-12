@@ -14,11 +14,11 @@ function Counter() {
   }
 
   let increaseCount = () => {
-    setCount(c => c + 1);
+    setCount(count + 1);
   }
 
   let decreaseCount = () => {
-    setCount(c => c - 1);
+    setCount(count - 1);
   }
 
   let resetCount = () => {
@@ -27,7 +27,7 @@ function Counter() {
 
   return (
     <>
-      <div className={`${styles.container}`}>
+      <div className={`${styles.container} float`}>
         <h1 className={styles.heading} >REACT COUNTER</h1>
         <p className={`${styles.countDisplay} ${isScale ? "scale-pop" : "" }`} >{count}</p>
         <div className={styles.btns}>
