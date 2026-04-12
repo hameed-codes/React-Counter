@@ -24,3 +24,18 @@ body {
     50% {transform: scale(1.2);}
     100% {transform: scale(1);}
 }
+
+
+.float {
+  animation: floating 2s ease-in-out infinite;
+}
+
+.float:hover {
+  animation-play-state: paused;
+}
+
+@keyframes floating {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-15px);}
+  100% {transform: translateY(0px);}
+}
