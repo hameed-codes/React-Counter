@@ -82,6 +82,30 @@
     font-size: 1rem;
 }
 
+.stepsDiv label {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-right: 10px;
+    letter-spacing: 2px;
+}
+
+.steps {
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding-right: 5px;
+    font-weight: bolder;
+}
+
+.steps:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 400px) {
     .container {
         min-width: auto;

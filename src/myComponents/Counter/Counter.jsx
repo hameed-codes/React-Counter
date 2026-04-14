@@ -6,6 +6,12 @@ function Counter() {
   const [count, setCount] = useState(0);
   const [isScale, setIsScale] = useState(false);
 
+  let step = 0;
+
+  function getStep() {
+    step = parseInt(document.querySelector("#steps").value);
+  }
+
   let animate = () => {
     setIsScale(true);
     setTimeout(() => {
@@ -14,11 +20,13 @@ function Counter() {
   }
 
   let increaseCount = () => {
-    setCount(count + 1);
+    getStep();
+    setCount(count + step);
   }
 
   let decreaseCount = () => {
-    setCount(count - 1);
+    getStep();
+    setCount(count - step);
   }
 
   let resetCount = () => {
@@ -43,6 +51,10 @@ function Counter() {
             increaseCount();
             animate();
           }} >+</button>
+        </div>
+        <div className={styles.stepsDiv} >
+          <label htmlFor="steps">Steps:</label>
+          <input type="number" defaultValue={1} id='steps' className={styles.steps} />
         </div>
       </div>
     </>
